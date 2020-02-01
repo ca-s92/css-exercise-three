@@ -12,9 +12,11 @@ section {
   width: 420px;
 }
 
-.container {
+.container {  /* when scrolling the nav bar moves -- not sure where to address this*/
   box-sizing: border-box;
   background-color: #fff;
+  /* float: left; moves container over to left, unresponsive*/
+  /* display: inline-block; */ /*unresponsive*/
   border: 1px solid #000;
   padding-bottom: 0px;
   position: relative;
@@ -26,6 +28,9 @@ section {
 nav {
   box-sizing: border-box;
   background-color: #000;
+  /*float: left; doesn't do anything -- maybe needs to move within arrow-left?*/
+  /* display: inline; */
+  /* margin: 0px auto; */
   padding: 0;
   position: fixed;
   width: 418px;
@@ -37,7 +42,10 @@ nav {
 }
 
 .location {
+  /* box-sizing: border-box;*/
   width: 420px;
+  /* margin: 0px; /*moves text away from border of container*/
+  /*padding: 0;*/
   border-bottom: .75px solid #000;
 }
 
@@ -49,6 +57,10 @@ nav {
   position: relative;
   top: -32px;
 }
+
+/* does .fa class (within arrow) do anything?
+.fa fa-chevron-right fa-2x {
+  float: right;}  /*unresponsive*/
 
 .location :hover {
   background-color: #ccc;
@@ -70,5 +82,5 @@ h1 {
   padding-top: 35px;
   padding-bottom: 0px:
   border: 0 0 20px 15px;
-  width: 100%;
+  width: 100%;  /*unresponsive*/
 }
